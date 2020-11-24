@@ -1,0 +1,4 @@
+
+[2020年 11月 24日 星期二 19:18:01 CST]: In FileLoader.php line 168: [SymfonyComponentConfigExceptionFileLoaderLoadException] The file parameters.yml does not exist (in: /home/xiaoaj/桌面/EduSoho/app /config) in parameters.yml (which is being imported from
+
+[2020年 11月 24日 星期二 19:18:01 CST]: In FileLoader.php line 168: [SymfonyComponentConfigExceptionFileLoaderLoadException] The file parameters.yml does not exist (in: /home/xiaoaj/桌面/EduSoho/app /config) in parameters.yml (which is being imported from
