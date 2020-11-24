@@ -1,1 +1,0 @@
-$('#site-navbar').find('.notification-badge-container .badge').remove();

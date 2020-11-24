@@ -1,5 +1,0 @@
-#!/usr/bin/env php
-<?php
-
-include('caculate-unit.php');
-include('caculate-coverage.php');

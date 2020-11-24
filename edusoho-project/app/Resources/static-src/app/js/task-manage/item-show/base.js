@@ -1,6 +1,0 @@
-class Editor {
-  constructor($modal) {
-
-  }
-  
-}
