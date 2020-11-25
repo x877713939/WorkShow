@@ -1,3 +1,11 @@
 workshow_homepage:
     path:     /work
-    defaults: { _controller: WorkshowPlugin:Default:index }
+    defaults: { _controller: WorkshowPlugin:Banner:index }
+workshow_worklist:
+        path: /worklist
+        defaults: { _controller: WorkshowPlugin:WorkList:index }
+workshow_searchclass:
+    path: /searchclass
+    defaults: { _controller: WorkshowPlugin:WorkList:searchClass }
+
+
