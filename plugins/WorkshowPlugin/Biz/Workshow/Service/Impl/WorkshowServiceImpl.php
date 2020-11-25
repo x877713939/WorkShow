@@ -10,10 +10,4 @@ use WorkshowPlugin\Biz\Workshow\Service\WorkshowService;
 
 class WorkshowServiceImpl extends BaseService implements WorkshowService
 {
-
-
-    protected function getWorkshowDao()
-    {
-        return $this->createDao('WorkshowPlugin:Workshow:WorkshowDao');
-    }
 }
