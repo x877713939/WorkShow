@@ -3,5 +3,5 @@ workshow_top:
   defaults: { _controller: WorkshowPlugin:Auth:header }
 
 workshow_gallery:
-  path:     /gallery
+  path:     /gallery/{workid}
   defaults: { _controller: WorkshowPlugin:Auth:gallery }

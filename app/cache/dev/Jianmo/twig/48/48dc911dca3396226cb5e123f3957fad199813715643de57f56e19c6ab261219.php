@@ -80,8 +80,8 @@ class __TwigTemplate_d1e244b96eec3e61973e71f799f0826efede3dc1fe0c80cab14b746167b
         <div class=\"row\">
           <div class=\"col-md-3\">
             <div class=\"head-logo\">
-              <a href=\"\">
-                <img src=\"static-dist/workshowplugin/img/header/logo.png\">作品秀
+              <a href=\"/\">
+                <img src=\"/static-dist/workshowplugin/img/header/logo.png\">作品秀
               </a>
             </div>
           </div>
@@ -106,16 +106,29 @@ class __TwigTemplate_d1e244b96eec3e61973e71f799f0826efede3dc1fe0c80cab14b746167b
         if ($this->getAttribute($this->getAttribute(($context["app"] ?? null), "user", [], "any", false, true), "id", [], "any", true, true)) {
             // line 39
             echo "                <div>
-                  <img src=\"static-dist/workshowplugin/img/header/head-test.png\">
-                </div>
+                  ";
+            // line 40
+            if ($this->getAttribute($this->getAttribute(($context["app"] ?? null), "user", [], "any", false, true), "smallAvatar", [], "any", true, true)) {
+                // line 41
+                echo "                  <img src=\"/static-dist/workshowplugin/img/header/";
+                echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "user", []), "smallAvatar", []), "html", null, true);
+                echo "\">
+                  ";
+            } else {
+                // line 43
+                echo "                  <img src=\"/static-dist/workshowplugin/img/header/head-test.png\">
+                  ";
+            }
+            // line 45
+            echo "                </div>
                 <a href=\"/logout\"><span>退出登录</span></a>
               ";
         } else {
-            // line 44
+            // line 48
             echo "                <a href=\"/login\">登录</a>|<a href=\"/register\">注册</a>
               ";
         }
-        // line 46
+        // line 50
         echo "            </div>
           </div>
         </div>
@@ -142,7 +155,7 @@ class __TwigTemplate_d1e244b96eec3e61973e71f799f0826efede3dc1fe0c80cab14b746167b
 
     public function getDebugInfo()
     {
-        return array (  119 => 46,  115 => 44,  108 => 39,  106 => 38,  74 => 9,  67 => 5,  63 => 4,  60 => 3,  51 => 2,  29 => 1,);
+        return array (  132 => 50,  128 => 48,  123 => 45,  119 => 43,  113 => 41,  111 => 40,  108 => 39,  106 => 38,  74 => 9,  67 => 5,  63 => 4,  60 => 3,  51 => 2,  29 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -171,8 +184,8 @@ class __TwigTemplate_d1e244b96eec3e61973e71f799f0826efede3dc1fe0c80cab14b746167b
         <div class=\"row\">
           <div class=\"col-md-3\">
             <div class=\"head-logo\">
-              <a href=\"\">
-                <img src=\"static-dist/workshowplugin/img/header/logo.png\">作品秀
+              <a href=\"/\">
+                <img src=\"/static-dist/workshowplugin/img/header/logo.png\">作品秀
               </a>
             </div>
           </div>
@@ -194,7 +207,11 @@ class __TwigTemplate_d1e244b96eec3e61973e71f799f0826efede3dc1fe0c80cab14b746167b
             <div class=\"head-login\">
               {% if app.user.id is defined %}
                 <div>
-                  <img src=\"static-dist/workshowplugin/img/header/head-test.png\">
+                  {% if app.user.smallAvatar is defined %}
+                  <img src=\"/static-dist/workshowplugin/img/header/{{ app.user.smallAvatar }}\">
+                  {% else %}
+                  <img src=\"/static-dist/workshowplugin/img/header/head-test.png\">
+                  {% endif %}
                 </div>
                 <a href=\"/logout\"><span>退出登录</span></a>
               {% else %}

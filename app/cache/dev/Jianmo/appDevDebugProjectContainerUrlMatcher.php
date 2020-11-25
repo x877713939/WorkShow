@@ -9513,8 +9513,8 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
         elseif (0 === strpos($pathinfo, '/g')) {
             // workshow_gallery
-            if ('/gallery' === $pathinfo) {
-                return array (  '_controller' => 'WorkshowPlugin\\Controller\\AuthController::galleryAction',  '_route' => 'workshow_gallery',  '_permission' =>   array (  ),  '_h5' => false,);
+            if (0 === strpos($pathinfo, '/gallery') && preg_match('#^/gallery/(?P<workid>[^/]++)$#sD', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, ['_route' => 'workshow_gallery']), array (  '_controller' => 'WorkshowPlugin\\Controller\\AuthController::galleryAction',  '_permission' =>   array (  ),  '_h5' => false,));
             }
 
             if (0 === strpos($pathinfo, '/group')) {

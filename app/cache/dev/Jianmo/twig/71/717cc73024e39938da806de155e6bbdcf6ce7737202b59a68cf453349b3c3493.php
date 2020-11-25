@@ -64,21 +64,34 @@ class __TwigTemplate_1c3aec674c8c5f774bd15f82f5596e88d11613aaeeb0ae8ab41c6438ae5
         <div class=\"row\">
           <div class=\"col-sm-8\">
             <div class=\"gallery-title\">
-              <div class=\"gallery-title-name\">我是作品标题</div>
-              <div class=\"gallery-title-viewers\">
-                <img src=\"static-dist/workshowplugin/img/gallery/viewers.svg\">2245
+              <div>
+                <div class=\"gallery-title-name\">";
+        // line 11
+        echo twig_escape_filter($this->env, $this->getAttribute(($context["data"] ?? $this->getContext($context, "data")), "title", []), "html", null, true);
+        echo "</div>
+                <div class=\"gallery-title-viewers\">
+                  <img src=\"/static-dist/workshowplugin/img/gallery/viewers.svg\">
+                  <span>";
+        // line 14
+        echo twig_escape_filter($this->env, $this->getAttribute(($context["data"] ?? $this->getContext($context, "data")), "visit", []), "html", null, true);
+        echo "</span>
+                </div>
               </div>
             </div>
           </div>
           <div class=\"col-sm-4\">
             <div class=\"gallery-author\">
-              <img src=\"static-dist/workshowplugin/img/header/head-test.png\">
+              <img src=\"/static-dist/workshowplugin/img/header/";
+        // line 21
+        echo twig_escape_filter($this->env, $this->getAttribute(($context["user"] ?? $this->getContext($context, "user")), "smallAvatar", []), "html", null, true);
+        echo "\">
               <div class=\"gallery-author-information\">
-                <span><b>作者名字</b></span>
+                <span><b>";
+        // line 23
+        echo twig_escape_filter($this->env, $this->getAttribute(($context["user"] ?? $this->getContext($context, "user")), "nickname", []), "html", null, true);
+        echo "</b></span>
                 <br>
-                <div class=\"gallery-author-introduction\">
                   <span>除了打游戏，其他什么都不会......</span>
-                </div>
               </div>
             </div>
           </div>
@@ -86,7 +99,10 @@ class __TwigTemplate_1c3aec674c8c5f774bd15f82f5596e88d11613aaeeb0ae8ab41c6438ae5
         <div class=\"row\">
           <div class=\"col-sm-8\">
             <div class=\"gallery-cover\">
-              <img src=\"static-dist/workshowplugin/img/gallery/Cover.png\">
+              <img src=\"/static-dist/workshowplugin/img/gallery/";
+        // line 33
+        echo twig_escape_filter($this->env, $this->getAttribute(($context["data"] ?? $this->getContext($context, "data")), "cover", []), "html", null, true);
+        echo "\">
             </div>
           </div>
           <div class=\"col-sm-4\">
@@ -95,8 +111,10 @@ class __TwigTemplate_1c3aec674c8c5f774bd15f82f5596e88d11613aaeeb0ae8ab41c6438ae5
                 作品简介：
               </div>
               <div class=\"gallery-work-introduction\">
-                内容超多，地图50+ 物品300+ 生存，冒险，创造，奖励箱，超平坦等玩法，祝大家游戏愉快！（注意：有时候F键无法吃食物是因为你在此之前吃的食物总量达到20饥饿值了） 感谢所有为此作品点赞评分的MC玩家，为我的世界（英文版）做出贡献。 请您抬起您那高贵的手点赞+5星+分享。
-                WSAD或上下左右键操作跳下（爬梯）左右行走；Q键扔东西，E键打开背包或瞄准箱子或门打开；按空格把物品分成1/N；P键暂停；F键吃东西：Q键扔东西。
+                ";
+        // line 42
+        echo twig_escape_filter($this->env, $this->getAttribute(($context["data"] ?? $this->getContext($context, "data")), "article", []), "html", null, true);
+        echo "
               </div>
             </div>
           </div>
@@ -111,18 +129,44 @@ class __TwigTemplate_1c3aec674c8c5f774bd15f82f5596e88d11613aaeeb0ae8ab41c6438ae5
     </div>
     <div class=\"container-fluid\">
       <div class=\"row\">
-        <div class=\"col-sm-2\">
-          <div class=\"gallery-recommend\">
-            <img src=\"static-dist/workshowplugin/img/header/head-test.png\">
-            <b>作品名称</b>
-          </div>
+        ";
+        // line 57
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable(range(0, (($context["rcmCount"] ?? $this->getContext($context, "rcmCount")) - 1)));
+        foreach ($context['_seq'] as $context["_key"] => $context["i"]) {
+            // line 58
+            echo "        <div class=\"col-sm-2\">
+          <a href=\"/gallery/";
+            // line 59
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["rcm"] ?? $this->getContext($context, "rcm")), $context["i"], [], "array"), "id", [], "array"), "html", null, true);
+            echo "\">
+            <div class=\"gallery-recommend\">
+              <img src=\"/static-dist/workshowplugin/img/gallery/";
+            // line 61
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["rcm"] ?? $this->getContext($context, "rcm")), $context["i"], [], "array"), "cover", [], "array"), "html", null, true);
+            echo "\">
+              <b>";
+            // line 62
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["rcm"] ?? $this->getContext($context, "rcm")), $context["i"], [], "array"), "title", [], "array"), "html", null, true);
+            echo "</b><br>
+              <div class=\"gallery-rcm\"  style=\"margin-top:-80px; height: 25px\">
+                <img src=\"/static-dist/workshowplugin/img/gallery/1.svg\">暂无
+                <img src=\"/static-dist/workshowplugin/img/gallery/viewers.svg\">";
+            // line 65
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["rcm"] ?? $this->getContext($context, "rcm")), $context["i"], [], "array"), "visit", [], "array"), "html", null, true);
+            echo "
+                <img src=\"/static-dist/workshowplugin/img/gallery/2.svg\" style=\"float: right\">
+              </div>
+            </div>
+          </a>
         </div>
-        <div class=\"col-sm-2\"></div>
-        <div class=\"col-sm-2\"></div>
-        <div class=\"col-sm-2\"></div>
-        <div class=\"col-sm-2\"></div>
-        <div class=\"col-sm-2\"></div>
-      </div>
+        ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['i'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 72
+        echo "      </div>
     </div>
     <div class=\"\"></div>
   </div>
@@ -147,7 +191,7 @@ class __TwigTemplate_1c3aec674c8c5f774bd15f82f5596e88d11613aaeeb0ae8ab41c6438ae5
 
     public function getDebugInfo()
     {
-        return array (  60 => 3,  51 => 2,  29 => 1,);
+        return array (  169 => 72,  156 => 65,  150 => 62,  146 => 61,  141 => 59,  138 => 58,  134 => 57,  116 => 42,  104 => 33,  91 => 23,  86 => 21,  76 => 14,  70 => 11,  60 => 3,  51 => 2,  29 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -169,21 +213,22 @@ class __TwigTemplate_1c3aec674c8c5f774bd15f82f5596e88d11613aaeeb0ae8ab41c6438ae5
         <div class=\"row\">
           <div class=\"col-sm-8\">
             <div class=\"gallery-title\">
-              <div class=\"gallery-title-name\">我是作品标题</div>
-              <div class=\"gallery-title-viewers\">
-                <img src=\"static-dist/workshowplugin/img/gallery/viewers.svg\">2245
+              <div>
+                <div class=\"gallery-title-name\">{{ data.title }}</div>
+                <div class=\"gallery-title-viewers\">
+                  <img src=\"/static-dist/workshowplugin/img/gallery/viewers.svg\">
+                  <span>{{ data.visit }}</span>
+                </div>
               </div>
             </div>
           </div>
           <div class=\"col-sm-4\">
             <div class=\"gallery-author\">
-              <img src=\"static-dist/workshowplugin/img/header/head-test.png\">
+              <img src=\"/static-dist/workshowplugin/img/header/{{ user.smallAvatar }}\">
               <div class=\"gallery-author-information\">
-                <span><b>作者名字</b></span>
+                <span><b>{{ user.nickname }}</b></span>
                 <br>
-                <div class=\"gallery-author-introduction\">
                   <span>除了打游戏，其他什么都不会......</span>
-                </div>
               </div>
             </div>
           </div>
@@ -191,7 +236,7 @@ class __TwigTemplate_1c3aec674c8c5f774bd15f82f5596e88d11613aaeeb0ae8ab41c6438ae5
         <div class=\"row\">
           <div class=\"col-sm-8\">
             <div class=\"gallery-cover\">
-              <img src=\"static-dist/workshowplugin/img/gallery/Cover.png\">
+              <img src=\"/static-dist/workshowplugin/img/gallery/{{ data.cover }}\">
             </div>
           </div>
           <div class=\"col-sm-4\">
@@ -200,8 +245,7 @@ class __TwigTemplate_1c3aec674c8c5f774bd15f82f5596e88d11613aaeeb0ae8ab41c6438ae5
                 作品简介：
               </div>
               <div class=\"gallery-work-introduction\">
-                内容超多，地图50+ 物品300+ 生存，冒险，创造，奖励箱，超平坦等玩法，祝大家游戏愉快！（注意：有时候F键无法吃食物是因为你在此之前吃的食物总量达到20饥饿值了） 感谢所有为此作品点赞评分的MC玩家，为我的世界（英文版）做出贡献。 请您抬起您那高贵的手点赞+5星+分享。
-                WSAD或上下左右键操作跳下（爬梯）左右行走；Q键扔东西，E键打开背包或瞄准箱子或门打开；按空格把物品分成1/N；P键暂停；F键吃东西：Q键扔东西。
+                {{ data.article }}
               </div>
             </div>
           </div>
@@ -216,17 +260,21 @@ class __TwigTemplate_1c3aec674c8c5f774bd15f82f5596e88d11613aaeeb0ae8ab41c6438ae5
     </div>
     <div class=\"container-fluid\">
       <div class=\"row\">
+        {% for i in 0..rcmCount - 1 %}
         <div class=\"col-sm-2\">
-          <div class=\"gallery-recommend\">
-            <img src=\"static-dist/workshowplugin/img/header/head-test.png\">
-            <b>作品名称</b>
-          </div>
+          <a href=\"/gallery/{{ rcm[i]['id'] }}\">
+            <div class=\"gallery-recommend\">
+              <img src=\"/static-dist/workshowplugin/img/gallery/{{ rcm[i]['cover'] }}\">
+              <b>{{ rcm[i]['title'] }}</b><br>
+              <div class=\"gallery-rcm\"  style=\"margin-top:-80px; height: 25px\">
+                <img src=\"/static-dist/workshowplugin/img/gallery/1.svg\">暂无
+                <img src=\"/static-dist/workshowplugin/img/gallery/viewers.svg\">{{ rcm[i]['visit'] }}
+                <img src=\"/static-dist/workshowplugin/img/gallery/2.svg\" style=\"float: right\">
+              </div>
+            </div>
+          </a>
         </div>
-        <div class=\"col-sm-2\"></div>
-        <div class=\"col-sm-2\"></div>
-        <div class=\"col-sm-2\"></div>
-        <div class=\"col-sm-2\"></div>
-        <div class=\"col-sm-2\"></div>
+        {% endfor %}
       </div>
     </div>
     <div class=\"\"></div>
