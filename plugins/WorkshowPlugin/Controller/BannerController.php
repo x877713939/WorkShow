@@ -11,7 +11,7 @@ class BannerController extends BaseController
         //拿轮播图数据开始
         $data = $this->getBlockService()->getBlockByCode('jianmo:home_top_banner');
         $data = $data['data'];
-        $posters = $data['posters'];//拿首页轮播图数据结束
+        $posters = $data['posters'];//拿到首页轮播图数据结束
         return $this->render('WorkshowPlugin:Banner:banner.html.twig', ['posters' => $posters]);
     }
     protected function getBlockService()

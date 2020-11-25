@@ -1,6 +1,7 @@
 {% extends 'layout.html.twig' %}
 {% do script(['app/js/index/index.js']) %}
 {% block body %}
+{#    轮播图开始#}
     <section class="es-poster swiper-container">
         <div class="swiper-wrapper">
             {% for poster in posters %}
@@ -20,5 +21,5 @@
         </div>
         <div class="swiper-pager"></div>
     </section>
-
+{#轮播图结束#}
 {% endblock %}
