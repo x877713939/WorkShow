@@ -1,0 +1,54 @@
+{% extends 'layout.html.twig' %}
+{% do script(['app/js/index/index.js']) %}
+
+{% block body %}
+    <script src="{{ asset('static-dist/libs/jquery/dist/jquery.min.js') }}"></script>
+    <script src="{{ asset('static-dist/workshowplugin/js/work-list/index.js') }}"></script>
+    <link rel="stylesheet" href="{{ asset('static-dist/workshowplugin/css/main.css') }}">
+    <div class="container">
+        <div class="allbutton">
+            <form action="/worklist" method="get">
+                <input type="submit" value="全部" class="button-056X1" id="work-class-all">
+            </form>
+            <button type="button" class="button-057X1" id="work-class-algorithm">算法</button>
+            <button type="button" class="button-057X1" id="work-class-game">游戏</button>
+            <button type="button" class="button-057X1" id="work-class-other">其他</button>
+        </div>
+
+{#        <button type="button" class="button-056X1" id="work-class-all">全部</button>#}
+
+    </div>
+    <div id="content" class="works-content">
+        {% for i in range(0, 14) %}
+            <div class="card" onclick="window.location.href= '/work';return false">
+                <img class="card-img-top" src="static-dist/workshowplugin/img/index/199.png" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">排序算法</p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    <div class="worklist-page">
+        <nav aria-label="Page navigation">
+            <ul class="pagination">
+                <li>
+                    <a href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li>
+                    <a href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+{% endblock %}
