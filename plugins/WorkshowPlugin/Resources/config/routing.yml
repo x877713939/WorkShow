@@ -1,0 +1,7 @@
+workshow_top:
+  path:     /top
+  defaults: { _controller: WorkshowPlugin:Auth:header }
+
+workshow_gallery:
+  path:     /gallery
+  defaults: { _controller: WorkshowPlugin:Auth:gallery }

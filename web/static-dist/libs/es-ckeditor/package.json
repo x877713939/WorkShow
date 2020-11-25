@@ -22,5 +22,8 @@
   "bugs": {
     "url": "http://dev.ckeditor.com"
   },
-  "homepage": "http://ckeditor.com"
+  "homepage": "http://ckeditor.com",
+  "__npminstall_done": "Mon Nov 23 2020 11:44:05 GMT+0800 (CST)",
+  "_from": "es-ckeditor@4.7.2-patch14",
+  "_resolved": "https://registry.npm.taobao.org/es-ckeditor/download/es-ckeditor-4.7.2-patch14.tgz"
 }

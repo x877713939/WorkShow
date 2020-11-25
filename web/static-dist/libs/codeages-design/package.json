@@ -54,5 +54,8 @@
     "style-loader": "^0.19.0",
     "url-loader": "^0.6.2",
     "webpack": "^3.8.1"
-  }
+  },
+  "__npminstall_done": "Mon Nov 23 2020 11:43:46 GMT+0800 (CST)",
+  "_from": "codeages-design@0.1.12",
+  "_resolved": "https://registry.npm.taobao.org/codeages-design/download/codeages-design-0.1.12.tgz"
 }

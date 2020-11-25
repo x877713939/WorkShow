@@ -1,0 +1,3 @@
+_plugin_Workshow_:
+    resource: '@WorkshowPlugin/Resources/config/routing.yml'
+    prefix: /
