@@ -1,2 +1,6 @@
-app/config/parameters.yml
-node_modules/
+# Ignore all
+/*
+
+# But not these files...
+!.gitignore
+!plugins

@@ -1,0 +1,11 @@
+workshow_homepage:
+    path:     /
+    defaults: { _controller: WorkshowPlugin:Default:index }
+
+workshow_createworkpage:
+    path:     /creatework
+    defaults: { _controller: WorkshowPlugin:CreateWork:index }
+
+workshow_addwork:
+    path: /addwork
+    defaults: { _controller: WorkshowPlugin:CreateWork:create }

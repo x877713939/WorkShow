@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="csrf-token" content="{{ csrf_token('site') }}">
+    <script src="{{ asset('static-dist/libs/jquery/dist/jquery.min.js') }}"></script>
+    <script src="{{ asset('static-dist/libs/jquery-validation/dist/jquery.validate.js') }}"></script>
+    <script src="{{ asset('static-dist/libs/bootstrap/dist/js/bootstrap.js') }}"></script>
+    <script src="{{ asset('static-dist/workshowplugin/js/CreateWork/index.js') }}"></script>
+    <link href="{{ asset('static-dist/libs/bootstrap/dist/css/bootstrap.css') }}" rel="stylesheet"/>
+    <link href="{{ asset('static-dist/workshowplugin/css/main.css') }}" rel="stylesheet"/>
+    <title>创作作品</title>
+</head>
+<body>
+<div class="container-fluid box_215X1">
+    <div class="row">
+        <div class="col-md-6 col-xs-6">
+            <h1 class="text_217X1">创作作品</h1>
+        </div>
+    </div>
+    <div class="col">
+    </div>
+    <div class="col">
+    </div>
+</div>
+<div class="container-fluid box_216X1">
+    <div class="row box_217X1">
+        <div class="col-md-6 col-xs-6">
+            <input type="text" placeholder="作品标题" class="text_241X1" id="title"></input>
+            <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span id="dropdownText">算法</span><span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a onclick="showDropdownText('Algorithm')" id="Algorithm">算法</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a onclick="showDropdownText('game')" id="game">游戏</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a onclick="showDropdownText('others')" id="others">其他</a></li>
+                </ul>
+            </div>
+            <textarea cols="30" rows="10" placeholder="作品介绍" class="text_242X1" id="article"></textarea>
+        </div>
+        <div class="col-md-6 col-xs-6 box_218X1">
+            <img src="static-dist/workshowplugin/img/img52.jpeg" style="width: 400px;height: 179px">
+            <button class="button_1264X1">上传图片</button>
+        </div>
+    </div>
+    <hr class="line_219X1"/>
+    <div class="row">
+        <button class="button_973X1">删除作品</button>
+        <button class="button_973X1" id="draft">保存草稿</button>
+        <button class="button_1264X1" id="publish">发布</button>
+    </div>
+</div>
+</body>
+</html>
