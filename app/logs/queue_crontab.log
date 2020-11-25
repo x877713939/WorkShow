@@ -1,0 +1,142 @@
+PHP Fatal error:  Uncaught Symfony\Component\Debug\Exception\ClassNotFoundException: Attempted to load class "BookPlugin" from namespace "BookPlugin".
+Did you forget a "use" statement for another namespace? in /var/www/bootcamp/chenlong/EduSoho/app/AppKernel.php:125
+Stack trace:
+#0 /var/www/bootcamp/chenlong/EduSoho/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php(493): AppKernel->registerBundles()
+#1 /var/www/bootcamp/chenlong/EduSoho/app/AppKernel.php(70): Symfony\Component\HttpKernel\Kernel->initializeBundles()
+#2 /var/www/bootcamp/chenlong/EduSoho/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Console/Application.php(64): AppKernel->boot()
+#3 /var/www/bootcamp/chenlong/EduSoho/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php(148): Symfony\Bundle\FrameworkBundle\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /var/www/bootcamp/chenlong/EduSoho/app/console(32): Symfony\Component\Console\Ap in /var/www/bootcamp/chenlong/EduSoho/app/AppKernel.php on line 125
+PHP Fatal error:  Uncaught Symfony\Component\Debug\Exception\ClassNotFoundException: Attempted to load class "BookPlugin" from namespace "BookPlugin".
+Did you forget a "use" statement for another namespace? in /var/www/bootcamp/chenlong/EduSoho/app/AppKernel.php:125
+Stack trace:
+#0 /var/www/bootcamp/chenlong/EduSoho/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php(493): AppKernel->registerBundles()
+#1 /var/www/bootcamp/chenlong/EduSoho/app/AppKernel.php(70): Symfony\Component\HttpKernel\Kernel->initializeBundles()
+#2 /var/www/bootcamp/chenlong/EduSoho/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Console/Application.php(64): AppKernel->boot()
+#3 /var/www/bootcamp/chenlong/EduSoho/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php(148): Symfony\Bundle\FrameworkBundle\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /var/www/bootcamp/chenlong/EduSoho/app/console(32): Symfony\Component\Console\Ap in /var/www/bootcamp/chenlong/EduSoho/app/AppKernel.php on line 125
+PHP Fatal error:  Uncaught Symfony\Component\Debug\Exception\ClassNotFoundException: Attempted to load class "BookPlugin" from namespace "BookPlugin".
+Did you forget a "use" statement for another namespace? in /var/www/bootcamp/chenlong/EduSoho/app/AppKernel.php:125
+Stack trace:
+#0 /var/www/bootcamp/chenlong/EduSoho/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php(493): AppKernel->registerBundles()
+#1 /var/www/bootcamp/chenlong/EduSoho/app/AppKernel.php(70): Symfony\Component\HttpKernel\Kernel->initializeBundles()
+#2 /var/www/bootcamp/chenlong/EduSoho/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Console/Application.php(64): AppKernel->boot()
+#3 /var/www/bootcamp/chenlong/EduSoho/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php(148): Symfony\Bundle\FrameworkBundle\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /var/www/bootcamp/chenlong/EduSoho/app/console(32): Symfony\Component\Console\Ap in /var/www/bootcamp/chenlong/EduSoho/app/AppKernel.php on line 125
+PHP Fatal error:  Uncaught Symfony\Component\Debug\Exception\ClassNotFoundException: Attempted to load class "BookPlugin" from namespace "BookPlugin".
+Did you forget a "use" statement for another namespace? in /var/www/bootcamp/chenlong/EduSoho/app/AppKernel.php:125
+Stack trace:
+#0 /var/www/bootcamp/chenlong/EduSoho/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php(493): AppKernel->registerBundles()
+#1 /var/www/bootcamp/chenlong/EduSoho/app/AppKernel.php(70): Symfony\Component\HttpKernel\Kernel->initializeBundles()
+#2 /var/www/bootcamp/chenlong/EduSoho/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Console/Application.php(64): AppKernel->boot()
+#3 /var/www/bootcamp/chenlong/EduSoho/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php(148): Symfony\Bundle\FrameworkBundle\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /var/www/bootcamp/chenlong/EduSoho/app/console(32): Symfony\Component\Console\Ap in /var/www/bootcamp/chenlong/EduSoho/app/AppKernel.php on line 125
+PHP Fatal error:  Uncaught Symfony\Component\Debug\Exception\ClassNotFoundException: Attempted to load class "BookPlugin" from namespace "BookPlugin".
+Did you forget a "use" statement for another namespace? in /var/www/bootcamp/chenlong/EduSoho/app/AppKernel.php:125
+Stack trace:
+#0 /var/www/bootcamp/chenlong/EduSoho/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php(493): AppKernel->registerBundles()
+#1 /var/www/bootcamp/chenlong/EduSoho/app/AppKernel.php(70): Symfony\Component\HttpKernel\Kernel->initializeBundles()
+#2 /var/www/bootcamp/chenlong/EduSoho/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Console/Application.php(64): AppKernel->boot()
+#3 /var/www/bootcamp/chenlong/EduSoho/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php(148): Symfony\Bundle\FrameworkBundle\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /var/www/bootcamp/chenlong/EduSoho/app/console(32): Symfony\Component\Console\Ap in /var/www/bootcamp/chenlong/EduSoho/app/AppKernel.php on line 125
+
+In AbstractMySQLDriver.php line 103:
+                                                                             
+  [Doctrine\DBAL\Exception\ConnectionException]                              
+  An exception occured in driver: SQLSTATE[HY000] [2002] Connection refused  
+                                                                             
+
+Exception trace:
+  at /var/www/bootcamp/chenlong/EduSoho/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php:103
+ Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException() at /var/www/bootcamp/chenlong/EduSoho/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php:145
+ Doctrine\DBAL\DBALException::driverException() at /var/www/bootcamp/chenlong/EduSoho/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php:47
+ Doctrine\DBAL\Driver\PDOMySql\Driver->connect() at /var/www/bootcamp/chenlong/EduSoho/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php:360
+ Doctrine\DBAL\Connection->connect() at /var/www/bootcamp/chenlong/EduSoho/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php:833
+ Doctrine\DBAL\Connection->executeQuery() at /var/www/bootcamp/chenlong/EduSoho/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php:510
+ Doctrine\DBAL\Connection->fetchAssoc() at /var/www/bootcamp/chenlong/EduSoho/vendor/codeages/biz-framework/src/Dao/GeneralDaoImpl.php:216
+ Codeages\Biz\Framework\Dao\GeneralDaoImpl->getByFields() at /var/www/bootcamp/chenlong/EduSoho/src/Biz/User/Dao/Impl/UserDaoImpl.php:19
+ Biz\User\Dao\Impl\UserDaoImpl->getUserByType() at n/a:n/a
+ call_user_func_array() at /var/www/bootcamp/chenlong/EduSoho/vendor/codeages/biz-framework/src/Dao/DaoProxy.php:337
+ Codeages\Biz\Framework\Dao\DaoProxy->callRealDao() at /var/www/bootcamp/chenlong/EduSoho/vendor/codeages/biz-framework/src/Dao/DaoProxy.php:100
+ Codeages\Biz\Framework\Dao\DaoProxy->get() at /var/www/bootcamp/chenlong/EduSoho/vendor/codeages/biz-framework/src/Dao/DaoProxy.php:47
+ Codeages\Biz\Framework\Dao\DaoProxy->__call() at /var/www/bootcamp/chenlong/EduSoho/src/Biz/User/Service/Impl/UserServiceImpl.php:871
+ Biz\User\Service\Impl\UserServiceImpl->getUserByType() at n/a:n/a
+ call_user_func_array() at /var/www/bootcamp/chenlong/EduSoho/vendor/codeages/biz-framework/src/Service/ServiceProxy.php:36
+ Codeages\Biz\Framework\Service\ServiceProxy->__call() at /var/www/bootcamp/chenlong/EduSoho/src/AppBundle/Command/WorkerCommand.php:54
+ AppBundle\Command\WorkerCommand->initServiceKernel() at /var/www/bootcamp/chenlong/EduSoho/src/AppBundle/Command/WorkerCommand.php:41
+ AppBundle\Command\WorkerCommand->execute() at /var/www/bootcamp/chenlong/EduSoho/vendor/symfony/symfony/src/Symfony/Component/Console/Command/Command.php:255
+ Symfony\Component\Console\Command\Command->run() at /var/www/bootcamp/chenlong/EduSoho/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:1005
+ Symfony\Component\Console\Application->doRunCommand() at /var/www/bootcamp/chenlong/EduSoho/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Console/Application.php:86
+ Symfony\Bundle\FrameworkBundle\Console\Application->doRunCommand() at /var/www/bootcamp/chenlong/EduSoho/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:255
+ Symfony\Component\Console\Application->doRun() at /var/www/bootcamp/chenlong/EduSoho/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Console/Application.php:74
+ Symfony\Bundle\FrameworkBundle\Console\Application->doRun() at /var/www/bootcamp/chenlong/EduSoho/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:148
+ Symfony\Component\Console\Application->run() at /var/www/bootcamp/chenlong/EduSoho/app/console:32
+
+In PDOConnection.php line 47:
+                                              
+  [Doctrine\DBAL\Driver\PDOException (2002)]  
+  SQLSTATE[HY000] [2002] Connection refused   
+                                              
+
+Exception trace:
+  at /var/www/bootcamp/chenlong/EduSoho/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:47
+ Doctrine\DBAL\Driver\PDOConnection->__construct() at /var/www/bootcamp/chenlong/EduSoho/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php:44
+ Doctrine\DBAL\Driver\PDOMySql\Driver->connect() at /var/www/bootcamp/chenlong/EduSoho/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php:360
+ Doctrine\DBAL\Connection->connect() at /var/www/bootcamp/chenlong/EduSoho/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php:833
+ Doctrine\DBAL\Connection->executeQuery() at /var/www/bootcamp/chenlong/EduSoho/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php:510
+ Doctrine\DBAL\Connection->fetchAssoc() at /var/www/bootcamp/chenlong/EduSoho/vendor/codeages/biz-framework/src/Dao/GeneralDaoImpl.php:216
+ Codeages\Biz\Framework\Dao\GeneralDaoImpl->getByFields() at /var/www/bootcamp/chenlong/EduSoho/src/Biz/User/Dao/Impl/UserDaoImpl.php:19
+ Biz\User\Dao\Impl\UserDaoImpl->getUserByType() at n/a:n/a
+ call_user_func_array() at /var/www/bootcamp/chenlong/EduSoho/vendor/codeages/biz-framework/src/Dao/DaoProxy.php:337
+ Codeages\Biz\Framework\Dao\DaoProxy->callRealDao() at /var/www/bootcamp/chenlong/EduSoho/vendor/codeages/biz-framework/src/Dao/DaoProxy.php:100
+ Codeages\Biz\Framework\Dao\DaoProxy->get() at /var/www/bootcamp/chenlong/EduSoho/vendor/codeages/biz-framework/src/Dao/DaoProxy.php:47
+ Codeages\Biz\Framework\Dao\DaoProxy->__call() at /var/www/bootcamp/chenlong/EduSoho/src/Biz/User/Service/Impl/UserServiceImpl.php:871
+ Biz\User\Service\Impl\UserServiceImpl->getUserByType() at n/a:n/a
+ call_user_func_array() at /var/www/bootcamp/chenlong/EduSoho/vendor/codeages/biz-framework/src/Service/ServiceProxy.php:36
+ Codeages\Biz\Framework\Service\ServiceProxy->__call() at /var/www/bootcamp/chenlong/EduSoho/src/AppBundle/Command/WorkerCommand.php:54
+ AppBundle\Command\WorkerCommand->initServiceKernel() at /var/www/bootcamp/chenlong/EduSoho/src/AppBundle/Command/WorkerCommand.php:41
+ AppBundle\Command\WorkerCommand->execute() at /var/www/bootcamp/chenlong/EduSoho/vendor/symfony/symfony/src/Symfony/Component/Console/Command/Command.php:255
+ Symfony\Component\Console\Command\Command->run() at /var/www/bootcamp/chenlong/EduSoho/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:1005
+ Symfony\Component\Console\Application->doRunCommand() at /var/www/bootcamp/chenlong/EduSoho/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Console/Application.php:86
+ Symfony\Bundle\FrameworkBundle\Console\Application->doRunCommand() at /var/www/bootcamp/chenlong/EduSoho/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:255
+ Symfony\Component\Console\Application->doRun() at /var/www/bootcamp/chenlong/EduSoho/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Console/Application.php:74
+ Symfony\Bundle\FrameworkBundle\Console\Application->doRun() at /var/www/bootcamp/chenlong/EduSoho/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:148
+ Symfony\Component\Console\Application->run() at /var/www/bootcamp/chenlong/EduSoho/app/console:32
+
+In PDOConnection.php line 43:
+                                             
+  [PDOException (2002)]                      
+  SQLSTATE[HY000] [2002] Connection refused  
+                                             
+
+Exception trace:
+  at /var/www/bootcamp/chenlong/EduSoho/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+ PDO->__construct() at /var/www/bootcamp/chenlong/EduSoho/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+ Doctrine\DBAL\Driver\PDOConnection->__construct() at /var/www/bootcamp/chenlong/EduSoho/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php:44
+ Doctrine\DBAL\Driver\PDOMySql\Driver->connect() at /var/www/bootcamp/chenlong/EduSoho/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php:360
+ Doctrine\DBAL\Connection->connect() at /var/www/bootcamp/chenlong/EduSoho/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php:833
+ Doctrine\DBAL\Connection->executeQuery() at /var/www/bootcamp/chenlong/EduSoho/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php:510
+ Doctrine\DBAL\Connection->fetchAssoc() at /var/www/bootcamp/chenlong/EduSoho/vendor/codeages/biz-framework/src/Dao/GeneralDaoImpl.php:216
+ Codeages\Biz\Framework\Dao\GeneralDaoImpl->getByFields() at /var/www/bootcamp/chenlong/EduSoho/src/Biz/User/Dao/Impl/UserDaoImpl.php:19
+ Biz\User\Dao\Impl\UserDaoImpl->getUserByType() at n/a:n/a
+ call_user_func_array() at /var/www/bootcamp/chenlong/EduSoho/vendor/codeages/biz-framework/src/Dao/DaoProxy.php:337
+ Codeages\Biz\Framework\Dao\DaoProxy->callRealDao() at /var/www/bootcamp/chenlong/EduSoho/vendor/codeages/biz-framework/src/Dao/DaoProxy.php:100
+ Codeages\Biz\Framework\Dao\DaoProxy->get() at /var/www/bootcamp/chenlong/EduSoho/vendor/codeages/biz-framework/src/Dao/DaoProxy.php:47
+ Codeages\Biz\Framework\Dao\DaoProxy->__call() at /var/www/bootcamp/chenlong/EduSoho/src/Biz/User/Service/Impl/UserServiceImpl.php:871
+ Biz\User\Service\Impl\UserServiceImpl->getUserByType() at n/a:n/a
+ call_user_func_array() at /var/www/bootcamp/chenlong/EduSoho/vendor/codeages/biz-framework/src/Service/ServiceProxy.php:36
+ Codeages\Biz\Framework\Service\ServiceProxy->__call() at /var/www/bootcamp/chenlong/EduSoho/src/AppBundle/Command/WorkerCommand.php:54
+ AppBundle\Command\WorkerCommand->initServiceKernel() at /var/www/bootcamp/chenlong/EduSoho/src/AppBundle/Command/WorkerCommand.php:41
+ AppBundle\Command\WorkerCommand->execute() at /var/www/bootcamp/chenlong/EduSoho/vendor/symfony/symfony/src/Symfony/Component/Console/Command/Command.php:255
+ Symfony\Component\Console\Command\Command->run() at /var/www/bootcamp/chenlong/EduSoho/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:1005
+ Symfony\Component\Console\Application->doRunCommand() at /var/www/bootcamp/chenlong/EduSoho/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Console/Application.php:86
+ Symfony\Bundle\FrameworkBundle\Console\Application->doRunCommand() at /var/www/bootcamp/chenlong/EduSoho/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:255
+ Symfony\Component\Console\Application->doRun() at /var/www/bootcamp/chenlong/EduSoho/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Console/Application.php:74
+ Symfony\Bundle\FrameworkBundle\Console\Application->doRun() at /var/www/bootcamp/chenlong/EduSoho/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:148
+ Symfony\Component\Console\Application->run() at /var/www/bootcamp/chenlong/EduSoho/app/console:32
+
+queue:work [--once] [--tries [TRIES]] [--stop-when-idle] [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [-e|--env ENV] [--no-debug] [--] <command> <name> <process-no>
+
+PHP Warning:  require(/var/www/bootcamp/chenlong/project-it-migrant-workers/app/../vendor/autoload.php): failed to open stream: No such file or directory in /var/www/bootcamp/chenlong/project-it-migrant-workers/app/autoload.php on line 9
+PHP Fatal error:  require(): Failed opening required '/var/www/bootcamp/chenlong/project-it-migrant-workers/app/../vendor/autoload.php' (include_path='.:/usr/share/php') in /var/www/bootcamp/chenlong/project-it-migrant-workers/app/autoload.php on line 9
+PHP Warning:  require(/var/www/bootcamp/chenlong/project-it-migrant-workers/app/../vendor/autoload.php): failed to open stream: No such file or directory in /var/www/bootcamp/chenlong/project-it-migrant-workers/app/autoload.php on line 9
+PHP Fatal error:  require(): Failed opening required '/var/www/bootcamp/chenlong/project-it-migrant-workers/app/../vendor/autoload.php' (include_path='.:/usr/share/php') in /var/www/bootcamp/chenlong/project-it-migrant-workers/app/autoload.php on line 9

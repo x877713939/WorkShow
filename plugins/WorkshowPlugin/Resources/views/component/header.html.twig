@@ -1,0 +1,55 @@
+{% extends 'layout.html.twig' %}
+{% block body %}
+
+<script src="{{ asset('static-dist/libs/jquery/dist/jquery.min.js') }}"></script>
+<script src="{{ asset('static-dist/workshowplugin/js/main.js') }}"></script>
+<html>
+<head>
+  <title></title>
+  <link href="{{ asset('static-dist/workshowplugin/css/main.css') }}" rel="stylesheet">
+</head>
+<body>
+    <div class="head-header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="head-logo">
+              <a href="/">
+                <img src="/static-dist/workshowplugin/img/header/logo.png">作品秀
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="head-search">
+              <form>
+                <input type="text" id="search" placeholder="美食"></input>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <a href="">
+              <div class="head-start">
+                <span>开始创作</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3">
+            <div class="head-login">
+              {% if app.user.id is defined %}
+                <div>
+                  {% if app.user.smallAvatar is defined %}
+                  <img src="/static-dist/workshowplugin/img/header/{{ app.user.smallAvatar }}">
+                  {% else %}
+                  <img src="/static-dist/workshowplugin/img/header/head-test.png">
+                  {% endif %}
+                </div>
+                <a href="/logout"><span>退出登录</span></a>
+              {% else %}
+                <a href="/login">登录</a>|<a href="/register">注册</a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock %}
