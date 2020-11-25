@@ -1,0 +1,3 @@
+workshow_homepage:
+    path:     /work
+    defaults: { _controller: WorkshowPlugin:Default:index }

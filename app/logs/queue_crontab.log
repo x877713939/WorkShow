@@ -1,0 +1,8 @@
+PHP Fatal error:  Uncaught PDOException: SQLSTATE[08S01]: Communication link failure: 1053 Server shutdown in progress in /home/zl/project-it-migrant-workers/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOStatement.php:105
+Stack trace:
+#0 /home/zl/project-it-migrant-workers/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOStatement.php(105): PDOStatement->execute(Array)
+#1 /home/zl/project-it-migrant-workers/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(849): Doctrine\DBAL\Driver\PDOStatement->execute(Array)
+#2 /home/zl/project-it-migrant-workers/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(510): Doctrine\DBAL\Connection->executeQuery('SELECT * FROM b...', Array, Array)
+#3 /home/zl/project-it-migrant-workers/vendor/codeages/biz-framework/src/Dao/GeneralDaoImpl.php(216): Doctrine\DBAL\Connection->fetchAssoc('SELECT * FROM b...', Array)
+#4 /home/zl/project-it-migrant-workers/vendor/codeages/biz-framework/src/Session/Dao/Impl/SessionDaoImpl.php(26): Codeages\Biz\Framework\Dao\GeneralDaoImpl->getByFields(Array)
+ in /home/zl/project-it-migrant-workers/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php on line 115
