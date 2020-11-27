@@ -7,23 +7,24 @@
     <link rel="stylesheet" href="{{ asset('static-dist/workshowplugin/css/main.css') }}">
     <div class="container">
         <div class="allbutton">
-            <form action="/worklist" method="get">
-                <input type="submit" value="全部" class="button-056X1" id="work-class-all">
-            </form>
-            <button type="button" class="button-057X1" id="work-class-algorithm">算法</button>
-            <button type="button" class="button-057X1" id="work-class-game">游戏</button>
-            <button type="button" class="button-057X1" id="work-class-other">其他</button>
+            <a class="{% if type =='全部' %}button-056X1{% else %}button-057X1{% endif %}" id="work-class-all" href="/worklist?page=1&type=全部">全部</a>
+            <a class="{% if type =='算法' %}button-056X1{% else %}button-057X1{% endif %}" id="work-class-algorithm" href="/worklist?page=1&type=算法">算法</a>
+            <a class="{% if type =='游戏' %}button-056X1{% else %}button-057X1{% endif %}" id="work-class-game" href="/worklist?page=1&type=游戏">游戏</a>
+            <a class="{% if type =='其他' %}button-056X1{% else %}button-057X1{% endif %}" id="work-class-other" href="/worklist?page=1&type=其他">其他</a>
         </div>
-
-{#        <button type="button" class="button-056X1" id="work-class-all">全部</button>#}
-
     </div>
     <div id="content" class="works-content">
-        {% for i in range(0, 14) %}
+        {% for data in datas %}
             <div class="card" onclick="window.location.href= '/work';return false">
-                <img class="card-img-top" src="static-dist/workshowplugin/img/index/199.png" alt="Card image cap">
+                <img class="card-img-top" src="static-dist/workshowplugin/img/index/{{ data.cover }}.png"
+                     alt="Card image cap">
                 <div class="card-body">
-                    <p class="card-text">排序算法</p>
+                    <p class="card-text">{{ data.title }}
+                    </p>
+                    {% set likeId=data.id %}
+                    <img src="static-dist/workshowplugin/img/index/good.svg" alt="">{{ num[likeId] }}
+                    <img src="static-dist/workshowplugin/img/index/view.svg" alt="">{{ data.visit }}
+                    <img src="static-dist/workshowplugin/img/index/user.svg" alt="">
                 </div>
             </div>
         {% endfor %}
@@ -32,17 +33,17 @@
         <nav aria-label="Page navigation">
             <ul class="pagination">
                 <li>
-                    <a href="#" aria-label="Previous">
+                    <a href="/worklist?page={{ page-1 }}&type={{ type }}" aria-label="Previous">
                         <span aria-hidden="true">&laquo;</span>
                     </a>
                 </li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
+                <li><a href="/worklist?page=1&type={{ type }}">1</a></li>
+                <li><a href="/worklist?page=2&type={{ type }}">2</a></li>
+                <li><a href="/worklist?page=3&type={{ type }}">3</a></li>
+                <li><a href="/worklist?page=4&type={{ type }}">4</a></li>
+                <li><a href="/worklist?page=5&type={{ type }}">5</a></li>
                 <li>
-                    <a href="#" aria-label="Next">
+                    <a href="/worklist?page={{ page+1 }}&type={{ type }}" aria-label="Next">
                         <span aria-hidden="true">&raquo;</span>
                     </a>
                 </li>

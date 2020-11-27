@@ -58,7 +58,6 @@ class Paginator
     public function setPageRange($range)
     {
         $this->pageRange = $range;
-
         return $this;
     }
 

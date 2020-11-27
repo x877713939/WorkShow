@@ -6,3 +6,20 @@ Stack trace:
 #3 /home/zl/project-it-migrant-workers/vendor/codeages/biz-framework/src/Dao/GeneralDaoImpl.php(216): Doctrine\DBAL\Connection->fetchAssoc('SELECT * FROM b...', Array)
 #4 /home/zl/project-it-migrant-workers/vendor/codeages/biz-framework/src/Session/Dao/Impl/SessionDaoImpl.php(26): Codeages\Biz\Framework\Dao\GeneralDaoImpl->getByFields(Array)
  in /home/zl/project-it-migrant-workers/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php on line 115
+
+In RouterResourcePass.php line 37:
+                                                             
+  [Symfony\Component\Debug\Exception\ContextErrorException]  
+  Warning: mkdir(): File exists                              
+                                                             
+
+Exception trace:
+  at /home/zl/project-it-migrant-workers/vendor/symfony/assetic-bundle/DependencyInjection/Compiler/RouterResourcePass.php:37
+ Symfony\Bundle\AsseticBundle\DependencyInjection\Compiler\RouterResourcePass->process() at /home/zl/project-it-migrant-workers/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Compiler/Compiler.php:140
+ Symfony\Component\DependencyInjection\Compiler\Compiler->compile() at /home/zl/project-it-migrant-workers/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/ContainerBuilder.php:789
+ Symfony\Component\DependencyInjection\ContainerBuilder->compile() at /home/zl/project-it-migrant-workers/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:643
+ Symfony\Component\HttpKernel\Kernel->initializeContainer() at /home/zl/project-it-migrant-workers/app/AppKernel.php:73
+ AppKernel->boot() at /home/zl/project-it-migrant-workers/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Console/Application.php:64
+ Symfony\Bundle\FrameworkBundle\Console\Application->doRun() at /home/zl/project-it-migrant-workers/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:148
+ Symfony\Component\Console\Application->run() at /home/zl/project-it-migrant-workers/app/console:32
+

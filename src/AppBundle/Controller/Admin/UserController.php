@@ -50,7 +50,7 @@ class UserController extends BaseController
             $paginator->getOffsetCount(),
             $paginator->getPerPageCount()
         );
-
+            var_dump($users);
         //根据mobile或者idcard查询user_profile获得userIds
         if (isset($conditions['keywordType']) && in_array($conditions['keywordType'], $this->keywordType) && !empty($conditions['keyword'])) {
             $preConditions = $this->getUserProfileConditions($conditions);
